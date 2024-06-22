@@ -2,7 +2,7 @@ const display = document.getElementById("display");
 
 function getLocation(){
     if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(showPosition)
+        navigator.geolocation.watchPosition(showPosition)
     } else {
         alert("location Not Found !");
     }
